@@ -31,6 +31,12 @@ iTerm2:
 brew install --cask iterm2
 ```
 
+Ubuntu:
+
+```bash
+Neovim will work with Gnome terminal in ubuntu as well.
+```
+
 Nerd font:
 
 ```bash
@@ -44,10 +50,20 @@ Neovim:
 brew install neovim
 ```
 
+Neovim in Ubuntu:
+
+Follow these steps: [Link](https://github.com/neovim/neovim/blob/master/INSTALL.md#ubuntu)
+
 Ripgrep:
 
 ```bash
 brew install ripgrep
+```
+
+Ripgrep in Ubuntu:
+
+```bash
+sudo apt install ripgrep
 ```
 
 Node/Npm:
@@ -60,6 +76,16 @@ For XCode Command Line Tools do:
 
 ```bash
 xcode-select --install
+```
+
+#### Lazy Git Installation in Ubuntu:
+
+```bash
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "
+https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit /usr/local/bin
 ```
 
 ## Plugins
